@@ -3,10 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "changelog.earth | Planetary release notes",
-  description: "New species. Balance changes. Unresolved bugs. An unofficial changelog for Earth.",
+  title: "changelog.indonesia | Patch notes untuk Indonesia",
+  description: "Perubahan baru. Balance changes. Known issues. Changelog tidak resmi untuk Indonesia.",
   alternates: {
-    types: { "application/rss+xml": "https://www.changelog.earth/feed.xml" },
+    types: { "application/rss+xml": "/feed.xml" },
   },
   other: {
     "codex-preview": "development",

@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 
 type Article = {title:string;url:string;date:string;dateLabel:string;publisher:string;provider:string;category:string;kind:string;note?:string;summary?:string;originalTitle?:string};
 type News = {editorial?:string;articles:Article[];checkedAt:number;unavailable:string[];stale:string[];sourceStatus?:{name:string;status:string;count:number;reason?:string}[]};
-const shareUrl = 'https://twitter.com/intent/tweet?' + new URLSearchParams({text:"Earth has patch notes. Discoveries, good news and small upgrades, written like game updates.",url:'https://www.changelog.earth'}).toString();
+const shareUrl = 'https://twitter.com/intent/tweet?' + new URLSearchParams({text:"Indonesia punya patch notes. Berita baik, buruk, dan upgrade kecil, ditulis seperti update game.",url:'https://www.changelog.earth'}).toString();
 const patchSymbols:Record<string,string>={Added:'+',Unlocked:'+',Updated:'~',Buffed:'↑',Nerfed:'↓',Removed:'-',Changed:'~',Improved:'~',Fixed:'*',Patched:'*'};
 const dayFormat = new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 export default function Home({news}:{news:News}) {

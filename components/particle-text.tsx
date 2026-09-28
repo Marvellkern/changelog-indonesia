@@ -31,10 +31,10 @@ export function HeroStars() {
 export function HeroTitle() {
  const reducedMotion = useReducedMotion();
  return <div className="hero-heading">
-  <motion.h1 className="hero-title" aria-label="Earth's Changelog"
+  <motion.h1 className="hero-title" aria-label="Changelog Indonesia"
    initial={false}
    animate={reducedMotion === false ? {opacity:[0,1],scale:[.8,1]} : {opacity:1,scale:1}}
    transition={{duration:1,ease:'easeOut'}}
-  ><span aria-hidden="true">Earth&apos;s</span><span aria-hidden="true">Changelog</span></motion.h1>
+  ><span aria-hidden="true">Indonesia&apos;s</span><span aria-hidden="true">Changelog</span></motion.h1>
  </div>;
 }

@@ -5,7 +5,7 @@ const secret = process.env.ARCHIVE_SECRET;
 if (!secret) throw new Error('ARCHIVE_SECRET must be configured for collection');
 const path = new URL('../data/editions.json',import.meta.url);
 const previous = validateArchive(JSON.parse(await readFile(path,'utf8')));
-const endpoint = new URL(process.env.EDITION_URL || 'https://www.changelog.earth/api/news');
+const endpoint = new URL(process.env.EDITION_URL || 'https://changelog-indonesia.vercel.app/api/news');
 endpoint.searchParams.set('archive',Date.now().toString());
 const response = await fetch(endpoint,{signal:AbortSignal.timeout(175_000),headers:{Authorization:`Bearer ${secret}`},redirect:'error'});
 if (!response.ok) throw new Error(`Edition HTTP ${response.status}`);

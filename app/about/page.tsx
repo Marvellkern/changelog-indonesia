@@ -13,6 +13,7 @@ export default function AboutPage() {
    <p className="about-lead">changelog.indonesia melacak perubahan yang gampang terlewat di berita harian — tol yang terbuka, stat yang di-nerf, known issue yang belum di-patch.</p>
    <p>Patch notes game ternyata cara yang seru untuk ceritakan berita itu. Setiap hari beberapa update asli, dengan tautan ke pemberitaan aslinya. Berita baik dan buruk sama-sama masuk; yang buruk ditulis gaya incident report, tanpa mengejek korban.</p>
    <p>Terinspirasi dari <a href="https://www.changelog.earth">changelog.earth</a> buatan <a href="https://alex.codes">Alex</a> — kodenya open source di <a href="https://github.com/byalex33/changelog.earth" target="_blank" rel="noreferrer">GitHub</a>.</p>
+   <p className="about-lead">Disclaimer: judul patch notes dihasilkan otomatis dan bisa salah. Situs ini tidak berafiliasi dengan media yang dilink — setiap entri merujuk ke pemberitaan asli yang merupakan rujukan sebenarnya.</p>
    <Link className="github-pill" href="/">Kembali ke patch notes ↗</Link>
   </main>
  </div>;
